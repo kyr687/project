@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>프로젝트</title>
+
+<style>
+header {
+	width: 1200px;
+	height: 120px;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: solid 1px #FEF4D9;
+}
+nav {
+	width: 1200px;
+	height: 75px;
+	margin-left: 50px;
+	border: solid 1px #FEF4D9;
+}
+section li {
+	float: left;
+}
+section {
+	width: 798px;
+	height: 600px;
+	border: solid 1px #FEF4D9;
+	margin-left: 50px;
+	float: left;
+}
+aside {
+	width: 400px;
+	height: 600px;
+	border: solid 1px #FEF4D9;
+	float: left;
+}
+footer {
+	width: 1200px;
+	margin-left: 50px;
+}
+li{
+	list-style-type: none;
+}
+#top {
+	float:right;
+}
+a[title ^= "eng"]{
+	background:url(images/us.png) no-repeat left center;	
+}
+a[title ^= "chin"]{
+	background:url(images/ch.png) no-repeat left center;
+}
+a[title ^= "jap"]{
+	background:url(images/jp.png) no-repeat left center	
+}
+section,nav,header { background-color: #FEF4D9;}
+
+.navi a:link{
+	display: block;
+	font-size: 18px;
+	color: #FF8200;
+	padding:10px;
+	text-decoration:none; 
+}
+.navi ul li {
+    float:left;
+    width:200px;
+    padding:10px; 
+    text-align: center;  
+  }
+.navi a:hover,  .navi a:focus {
+    background-color:#FAC87D; 
+    color:#fff;  
+  }
+.navi a:active {
+    background-color:#FFA500;  
+  }
+.foot li{
+  	font-size: 13px;
+  	color: gray;
+  }
+ 
+ footer a,li {
+ 	display:inline-block;
+	padding: 5px 20px;
+	font-size: 14px;
+	}
+a{
+	text-decoration: none;
+	color: #FF5E00;
+	}
+h1 {
+  color: #FF9100;
+  text-align:center;
+}
+
+.prod-list li {
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.prod-list img {
+  z-index:5;
+} 
+.prod-list .caption {
+  position: absolute;
+  top:200px; 
+  width:200px;
+  height:190px;
+  padding-top:20px;
+
+  background:rgba(0,0,0,0.6);  
+  opacity:0;  
+  transition: all 0.6s ease-in-out; 
+  z-index:10; 
+}
+.prod-list li:hover .caption {
+  opacity: 1;  
+  transform: translateY(-200px);  
+}  
+ .prod-list .caption p {
+  color: #fff;
+  text-align: center;
+} 	
+
+</style>
+</head>
+
+<body>
+	<header>
+		<div><img src='images/logo.jpg' width="330px" height="100px"></div>
+		<div id='top'> <a href="logout">로그아웃</a> | <a href="cartlist">장바구니</a> | <a href="#">고객센터</a> | <a href="#">예약확인</a> </div>
+	</header>
+
+	<nav class="navi">
+		<ul>
+			<li><a href="#">=메뉴</a></li>
+			<li><a href="nproduct"> 국내여행</a></li>
+			<li><a href="product.jsp"> 해외여행</a></li>
+			<li><a href="#"> 항공</a></li>
+			<li><a href="#"> 호텔</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div id="container">
+		<h1> 고객님을 위한 추천 여행지</h1>
+		<ul class="prod-list">
+			<li><img src='images/jeju.jpg'  width="200px" height="190px" >
+				<div class="caption">
+          		<h1>제주도</h1>
+          		<p>제주 3박 4일<br>[특가] 410000원~</p>
+        		</div>
+       		 </li>
+			<li><img src='images/url.bmp' width="200px" height="190px">
+				<div class="caption">
+         		 <h1>울릉도</h1>
+        	 	 <p>울릉도 1박 2일<br>[특가] 160000원~</p>
+       		 </div>
+    		</li>
+			<li><img src='images/dan.jpg' width="200px" height="190px">
+				<div class="caption">
+          		<h1>단양</h1>
+          		<p>단양 2박 3일<br>[특가] 230000원~</p>
+      			 </div>
+      		</li>
+    		<li><img src='images/jang.jpg' width="200px" height="190px">
+				<div class="caption">
+          		<h1>중국</h1>
+          		<p>장가계 3박 4일<br>[특가] 530000원~</p>
+      			 </div>
+    		</li>
+    		<li><img src='images/daeman.jpg' width="200px" height="190px">
+				<div class="caption">
+          		<h1>대만</h1>
+          		<p>타이베이 3박 4일<br>[특가] 560000원~</p>
+      			 </div>
+    		</li>
+    		<li><img src='images/sus.jpg' width="200px" height="190px">
+				<div class="caption">
+          		<h1>스위스</h1>
+          		<p>베른 7박 8일<br>[특가] 1300000원~</p>
+      			 </div>
+    		</li>
+		</ul>
+	</div>
+	</section>
+	<aside>
+		<img src='images/aside.png' width="400px" height="300px">
+		<img src='images/popup.jpg' width="400px" height="298px">
+	</aside>
+
+	<footer>
+        <ul>
+			<li>외국어 서비스: </li>
+			<li><a href="#" title="english">영어</a></li>
+			<li><a href="#" title="chinese">중국어</a></li>
+			<li><a href="#" title="japanese">일본어</a></li>
+		</ul>
+		 <ul class="foot">
+		 	<li>(주)용인투어네트워크 대표이사 : 김유림 |    사업자등록번호 : 123-45-00000 | yongintour@yiu.ac.kr<br>※ ㈜ 용인투어는 항공사가 제공하는 개별 항공권 및 여행사가 제공하는 일부 여행상품에 대하여 통신판매중개자의 지위를 가지며, 해당 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.<br>
+             ※ 부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.</li>
+             <img src='images/foot.png' width="1100px" height="50px">
+             <br><span>Copyright © Yongin Tour Corp.</span>
+         </ul>      
+	</footer>
+</body>
+</html>

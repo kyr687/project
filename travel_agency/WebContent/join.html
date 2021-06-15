@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>회원가입</title>
+  <style >
+
+   li{
+      list-style-type: none;
+  }
+    body {
+  background: #D5D5D5;
+  padding: 20px;  
+  }
+  h3{
+    text-align: center;
+    color: #FF5E00;
+  }
+  #signup {
+  background:#fff;
+  border:1px solid #222;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px; 
+  margin:30px auto;
+  }
+    
+  #signup fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  }
+    
+  #signup legend {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left:5px;
+  padding-bottom: 10px; 
+  }
+  </style>
+</head>
+<body>
+  <form id="signup" action="join.do" method="post">
+    <h3>회원가입</h3>
+    <fieldset>
+      <legend>로그인 정보</legend>
+      <ul>
+        <li>
+          <label for="name">이름</label>
+          <input id="name" name="name" type="text" placeholder="5자미만 공백없이" required/>
+        </li>
+        <li>
+          <label for="id">아이디</label>
+          <input id="id" name="id" type="text" required autofocus/>
+        </li>
+        <li>
+          <label for="pwd">비밀번호</label>
+          <input id="pwd" name="pwd" type="password"  required/>
+        </li>  
+        <li>
+          <label for="tel">연락처</label>
+          <input id="tel" name="tel" type="text" autocomplete="off"/>
+        </li> 
+        
+        <li>
+          <label for="email">메일 주소</label>
+          <input id="email" name="email" type="email" placeholder="abcd@domain.com" required autocomplete="off"/>
+        </li>
+         
+      </ul> 
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트 수신</legend>
+      <input type="radio" name="a" value="yes">동의</input>
+      <input type="radio" name="a" value="no">비동의</input>
+    </fieldset>
+
+    <button type="submit" value="join"/> 확인 </button> 
+ 
+  </form>
+</body>
+</html>

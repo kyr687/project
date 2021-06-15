@@ -1,0 +1,120 @@
+@charset "UTF-8";
+header {
+	width: 1200px;
+	height: 120px;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: solid 1px #FEF4D9;
+}
+nav {
+	width: 1200px;
+	height: 75px;
+	margin-left: 50px;
+	border: solid 1px #FEF4D9;
+}
+section li {
+	float: left;
+}
+section {
+	width: 798px;
+	height: 600px;
+	border: solid 1px #FEF4D9;
+	margin-left: 50px;
+	float: left;
+}
+aside {
+	width: 400px;
+	height: 600px;
+	border: solid 1px #FEF4D9;
+	float: left;
+}
+footer {
+	width: 1200px;
+	margin-left: 50px;
+}
+li{
+	list-style-type: none;
+}
+#top {
+	float:right;
+}
+a[title ^= "eng"]{
+	background:url(images/us.png) no-repeat left center;	
+}
+a[title ^= "chin"]{
+	background:url(images/ch.png) no-repeat left center;
+}
+a[title ^= "jap"]{
+	background:url(images/jp.png) no-repeat left center	
+}
+section,nav,header { background-color: #FEF4D9;}
+
+.navi a:link{
+	display: block;
+	font-size: 18px;
+	color: #FF8200;
+	padding:10px;
+	text-decoration:none; 
+}
+.navi ul li {
+    float:left;
+    width:200px;
+    padding:10px; 
+    text-align: center;  
+  }
+.navi a:hover,  .navi a:focus {
+    background-color:#FAC87D; 
+    color:#fff;  
+  }
+.navi a:active {
+    background-color:#FFA500;  
+  }
+.foot li{
+  	font-size: 13px;
+  	color: gray;
+  }
+ 
+ footer a,li {
+ 	display:inline-block;
+	padding: 5px 20px;
+	font-size: 14px;
+	}
+a{
+	text-decoration: none;
+	color: #FF5E00;
+	}
+h1 {
+  color: #FF9100;
+  text-align:center;
+}
+
+.prod-list li {
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.prod-list img {
+  z-index:5;
+} 
+.prod-list .caption {
+  position: absolute;
+  top:200px; 
+  width:200px;
+  height:190px;
+  padding-top:20px;
+
+  background:rgba(0,0,0,0.6);  
+  opacity:0;  
+  transition: all 0.6s ease-in-out; 
+  z-index:10; 
+}
+.prod-list li:hover .caption {
+  opacity: 1;  
+  transform: translateY(-200px);  
+}  
+ .prod-list .caption p {
+  color: #fff;
+  text-align: center;
+} 	
